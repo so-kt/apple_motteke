@@ -1,0 +1,284 @@
+ @charset "utf-8";
+/*全ページの装飾*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffd6;
+  color: #333333;
+  font-size: 15px;
+  line-height: 2;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3583aa;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #788d98;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  height: 90px;
+  margin: 10 auto 0 auto;
+  background-color: white;
+  border-bottom: solid 2px black;
+}
+
+.logo {
+  float: left;
+  margin: 10px;
+}
+
+.logo img{
+  height: 80px;
+}
+
+.global-nav {
+  float: right;
+  margin-top: 30px;
+}
+
+.global-nav li {
+  float: left;
+  margin: 0 20px;
+  font-size: 25px;
+  list-style: none;
+  font-family: 'Bakbak One', cursive;
+}
+
+.global-nav li a {
+  color: black;
+}
+
+#wrap{
+    width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.global-nav li a:hover {
+  border-bottom: 2px solid orange;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+footer small {
+  font-size: 12px;
+}
+
+#index h1 {
+  font-size: 30px;
+  line-height: 1;
+  color: black;
+  font-family: 'Bakbak One', cursive;
+}
+
+#index footer {
+  width: 960px;
+  margin: 150px auto 0px auto;
+  text-align: left;
+}
+
+/* リスト配置 */
+.contents-list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* フォームと一覧位置変 */
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+/* テーブルの枠線を一線に */
+.table-list {
+    border-collapse: collapse;
+    width: 780px;
+}
+
+/* 持ち物一覧,スクロールバー */
+.content-table {
+    height: 350px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* 持ち物一覧見出し */
+.heading-list {
+    border-style: solid;
+    border-width: 1px 0;
+    background-color: #ffa700;
+    border-color: #DCC7AA;
+}
+
+/* 持ち物一覧内容 */
+.cell-list {
+    border-style: solid;
+    border-width: 1px 0;
+    text-align: center;
+    padding: 12px;
+    max-width: 150px;
+    border-color: #DCC7AA;
+    background: #ffedcc;
+}
+
+/* 新規作成文字 */
+#new {
+    width: 200px;
+    border-bottom: solid 3px #F7882F;
+}
+
+fieldset {
+    border-color: #DCC7AA;
+}
+
+/* 持ち物大きさ */
+#title {
+    width: 190px;
+}
+
+/* 日付大きさ */
+#date {
+    width: 190px;
+}
+
+/* メモ枠大きさ */
+#memo {
+    height: 35px;
+    width: 190px;
+}
+
+#select {
+    width: 195px;
+}
+
+/* 登録ボタン */
+#submit {
+    border: none;
+    width: 200px;
+    heifht: 70px;
+    color: #fff;
+    background: #F7882F;
+    font-size: 102%;
+}
+
+#submit:hover{
+    background-color: #f9c500;
+}
+
+/* カレンダー */
+.container {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-top: 100px; /*上部の間隔*/
+    color: #605652; /*文字色*/
+}
+
+#c-h3 {
+    margin-bottom: 20px;/*年月の文字と表の間隔*/
+}
+
+#c-th {
+    height: 30px; /*曜日行の縦の長さ*/
+    text-align: center;
+    background: #ffa700; /*曜日バック色*/
+    width: 150px;
+}
+
+#c-td {
+    height: 100px; /*日付行の縦の長さ*/
+    background: #ffedcc; /*日付バック色*/
+}
+
+.today {
+    background: #ffdc99;　/*今日の日付にオレンジ色でマーク*/
+}
+
+#c-th:nth-of-type(1), #c-td:nth-of-type(1) { /*「日」と日曜の日付を赤に*/
+    color: red;
+}
+
+#c-th:nth-of-type(7), #c-td:nth-of-type(7) { /*「土」と土曜の日付を青に*/
+    color: blue;
+}
+
+
+
+.loginform{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    /*color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    text-align:center;
+}
+
+.main_log{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    /*color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    text-align:center;
+}
+
+.main_log img {
+    max-width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+
+.loginform img {
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.form_log{
+    text-align:center;
+}
+
+.log_button{
+　display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  transition: .4s;
+}
+
+.log_button:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+/* フォーム */
+.content-form {
+    background-color: #ffffff;
+}
